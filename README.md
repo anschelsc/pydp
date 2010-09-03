@@ -7,6 +7,7 @@ python3.
 
 At the moment all options are controlled by four variables at the top of the
 source file:
+
 * `bywords` controls whether the program will dissociate by words (`True`) or
   by characters (`False`).
 * `overlap` is the minimum number of characters/words of overlap.

@@ -7,8 +7,8 @@ import sys
 parser=optparse.OptionParser(usage='usage: %prog [options] [sourcefile]',version='%prog 1.0')
 parser.add_option('-w','--words',action='store_true',dest='bywords',default=False,help='Overlap by words')
 parser.add_option('-c','--characters',action='store_false',dest='bywords',help='Overlap by characters [default]')
-parser.add_option('-o','--overlap',type='int',metavar='N',dest='overlap',default=4,help='Use N characters/words of overlap')
-parser.add_option('-l','--length',type='int',metavar='N',dest='target',default=2000,help='Output N characters/words')
+parser.add_option('-o','--overlap',type='int',metavar='N',dest='overlap',default=4,help='Use N characters/words of overlap [default: 4]')
+parser.add_option('-l','--length',type='int',metavar='N',dest='target',default=2000,help='Output N characters/words [default: 2000]')
 options,args=parser.parse_args()
 if len(args)>1:
     parser.error('%prog takes one or zero filenames. To use more files, pipe from cat.')

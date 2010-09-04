@@ -5,8 +5,8 @@ pydp is an implementation of
 [Dissociated Press](http://en.wikipedia.org/wiki/Dissociated_press) written in
 python3.
 
-At the moment all options are controlled by four variables at the top of the
-source file:
+At the moment all options are controlled by four variables at the top of
+`pydp.py`
 
 * `bywords` controls whether the program will dissociate by words (`True`) or
   by characters (`False`).
